@@ -17,14 +17,25 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
  font-family: "Merienda", cursive
+}
+
+#header {
+    display: flex;
+    justify-content: center;
 }
 
 /*NAVIGATION*/
 
 nav {
     padding: 10px 50px;
+    width: 100%;
+    
 }
 
 .logo {
@@ -40,18 +51,28 @@ nav {
     justify-content: space-between;
 }
 
+.nav__link {
+    text-decoration: none;
+}
+
 /* Welcome */
 
 .welcome {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 24px 24px;
-}
-
-.welcome__img--container {
-
+    padding: 24px 32px;
+    width: 100%;
+    max-width: 100vh;
+    position: absolute;
 }
 
 .welcome__img {
     width: 100%;
+    background-position: center;
+
+}
+
+.welcome__img--container {
+    transform: translateY(100px);
 }
