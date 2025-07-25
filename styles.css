@@ -17,20 +17,41 @@ li {
     list-style-type: none;
 }
 
+h1 {
+ font-family: "Merienda", cursive
+}
+
 /*NAVIGATION*/
 
 nav {
-    display: flex;
-    justify-content: space-between;
     padding: 10px 50px;
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
     font-family: "Meow Script", cursive;
     font-size: 32px;
+    padding: 20px 0;
 }
 
 .nav__link--list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+/* Welcome */
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 24px;
+}
+
+.welcome__img--container {
+
+}
+
+.welcome__img {
+    width: 100%;
 }
