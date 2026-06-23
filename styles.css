@@ -271,6 +271,88 @@ footer {
 }
 
 /* ====================
+   SOCIAL MEDIA PAGE
+==================== */
+
+#social {
+    padding: 80px 0;
+}
+
+.page__title {
+    color: #d55a6d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.social__layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.social__img {
+    width: 100%;
+    display: block;
+}
+
+.social__content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.social__item h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.social__item a {
+    color: #d55a6d;
+    font-size: 18px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.social__item a:hover {
+    opacity: 0.8;
+}
+
+.social__item p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .social__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .social__img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .page__title {
+        font-size: 22px;
+    }
+
+    .social__item h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* ====================
    MOBILE
 ==================== */
 
