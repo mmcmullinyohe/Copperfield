@@ -456,33 +456,25 @@ footer {
     padding: 80px 0;
 }
 
-.pool__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 48px;
-    align-items: start;
+.pool__section {
+    margin-bottom: 48px;
 }
 
 .pool__card {
     border: 1px solid #eee;
     background: #fff;
+    overflow: hidden;
 }
 
 .pool__img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     display: block;
 }
 
 .pool__content {
-    padding: 36px 40px;
-}
-
-.pool__date {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 20px;
+    padding: 40px;
 }
 
 .pool__content h2 {
@@ -498,10 +490,13 @@ footer {
     font-size: 18px;
     line-height: 1.75;
     margin-bottom: 18px;
+    max-width: 900px;
 }
 
 .pool__rules-list {
     padding-left: 24px;
+    columns: 2;
+    column-gap: 48px;
 }
 
 .pool__rules-list li {
@@ -510,6 +505,7 @@ footer {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 14px;
+    break-inside: avoid;
 }
 
 .pool__notice {
@@ -532,16 +528,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .pool__grid {
-        grid-template-columns: 1fr;
-    }
-
     .pool__img {
         height: auto;
     }
 
     .pool__content {
         padding: 28px;
+    }
+
+    .pool__rules-list {
+        columns: 1;
     }
 }
 
