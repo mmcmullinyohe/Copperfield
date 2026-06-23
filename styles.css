@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 * {
     margin: 0;
@@ -163,6 +164,110 @@ footer {
 .footer__row {
     justify-content: center;
     text-align: center;
+}
+
+/* ====================
+   EVENTS PAGE
+==================== */
+
+#events {
+    padding: 80px 0;
+}
+
+.events__title {
+    color: #d55a6d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.events__title--small {
+    margin-top: 80px;
+}
+
+.events__intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 48px;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 250px 1fr 220px;
+    gap: 40px;
+    align-items: start;
+    padding: 20px 0 50px;
+}
+
+.event__date {
+    color: #d55a6d;
+    font-family: "Playfair", serif;
+    font-size: 42px;
+    line-height: 1.4;
+}
+
+.event__details h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.event__details p {
+    color: #666;
+    font-size: 18px;
+}
+
+.event__time {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.event__time h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.event__time p {
+    color: #666;
+}
+
+.event__divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0 60px;
+}
+
+.no-events {
+    text-align: center;
+    font-size: 42px;
+    padding: 60px 0;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .event {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .event__time {
+        text-align: left;
+    }
+
+    .event__date {
+        font-size: 32px;
+    }
+
+    .event__details h3,
+    .event__time h3 {
+        font-size: 28px;
+    }
 }
 
 /* ====================
