@@ -1,45 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copperfield</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <section id="header">
-        <nav>
-            <div class="logo">Copperfield</div>
-            <div class="nav__list">
-                <ul class="nav__link--list">
-                    <li class="nav__link">
-                    <a href="#">Home</a></li>
-                    <li class="nav__link"><a href="#">Contact Us</a></li>
-                    <li class="nav__link"><a href="#">Events</a></li>
-                    <li class="nav__link"><a href="#">Social Media</a></li>
-                    <li class="nav__link"><a href="#">Files</a></li>
-                    <li class="nav__link"><a href="#">Pool Rules & Info</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    <section id="welcome">
-        <div class="flex flex-1">
-            <div class="welcome__row">
-                <figure class="welcome__img--container">
-                    <img src="./assets/Copperfield Canva.png" class="welcome__img">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section id="about-us">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">Copperfield</a>
 
+        <nav>
+          <ul class="nav__link--list">
+            <li class="nav__link"><a href="#">Home</a></li>
+            <li class="nav__link"><a href="#">Contact Us</a></li>
+            <li class="nav__link"><a href="#">Events</a></li>
+            <li class="nav__link"><a href="#">Social Media Connections</a></li>
+            <li class="nav__link"><a href="#">Files</a></li>
+            <li class="nav__link"><a href="#">Pool Rules & Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="welcome">
+      <div class="container">
+        <img
+          src="./assets/Copperfield Canva.png"
+          alt="Copperfield Entrance"
+          class="welcome__img"
+        />
+      </div>
     </section>
-    <footer>
-        <div class=".row footer__row">
-            Copyright © 2025 Copperfield - All Rights Reserved
+
+    <section id="about-us">
+      <div class="container">
+        <h2 class="section__title">ABOUT US</h2>
+
+        <div class="about__grid">
+          <div class="about__card about__card--large">
+            <h3>Welcome!</h3>
+            <p>
+              Copperfield is a beautiful neighborhood in Edmond, OK on 2nd St
+              and Kelly Ave. We have an HOA of volunteers who help take care of
+              our neighborhood.
+            </p>
+
+            <p>
+              Check out the Events page for neighborhood and City of Edmond
+              events and activities.
+            </p>
+          </div>
+
+          <div class="about__card">
+            <h3>Pool Hours</h3>
+
+            <p>The pool is OPEN! Enjoy the 2026 season.</p>
+
+            <div class="pool-hours">
+              <p>Tues. - Fri. &nbsp;&nbsp;12pm - 8pm</p>
+              <p>Saturday &nbsp;&nbsp;&nbsp;11am - 7pm</p>
+              <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;1pm - 8pm</p>
+              <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;Closed</p>
+            </div>
+          </div>
+
+          <div class="about__card">
+            <h3>Get Involved!</h3>
+
+            <p>
+              We are always looking for resident volunteers to help with
+              projects or serve on our HOA board.
+            </p>
+
+            <p>The more volunteers we have, the better our community can be.</p>
+          </div>
         </div>
-    
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer__row">
+        Copyright © 2025 Copperfield - All Rights Reserved
+      </div>
     </footer>
-</body>
+  </body>
 </html>

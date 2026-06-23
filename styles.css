@@ -1,88 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meow+Script&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merienda:wght@300..900&display=swap');
 
 * {
-   font-family: "Lato", sans-serif;
-   padding: 0;
-   margin:0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-1 {
-    flex: 1;
-}
-
-li {
-    list-style-type: none;
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-h1 {
- font-family: "Merienda", cursive
+li {
+    list-style: none;
 }
+
+/* ====================
+   SHARED CONTAINER
+==================== */
+
+.container {
+    width: 90%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+/* ====================
+   HEADER
+==================== */
 
 #header {
-    display: flex;
-    justify-content: center;
-}
-
-
-/*NAVIGATION*/
-
-nav {
-    padding: 10px 50px;
-    width: 100%;
-    
+    padding: 50px 0 40px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    font-family: "Meow Script", cursive;
-    font-size: 32px;
-    padding: 20px 0;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 32px;
+    padding: 12px 26px;
+    border: 1px solid #333;
+    font-family: "Merienda", cursive;
+    font-size: 20px;
 }
+
+/* ====================
+   NAVIGATION
+==================== */
 
 .nav__link--list {
     display: flex;
-    justify-content: space-between;
-}
-
-.nav__link {
-    text-decoration: none;
-}
-
-/* Welcome */
-.welcome__row {
-    display: flex;
     justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav__link a {
+    position: relative;
+    color: #222;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Fancy animated underline */
+
+.nav__link a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #d55a6d;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav__link a:hover {
+    color: #d55a6d;
+}
+
+.nav__link a:hover::after {
     width: 100%;
+}
+
+
+/* ====================
+   HERO IMAGE
+==================== */
+
+#welcome {
+    padding-bottom: 60px;
 }
 
 .welcome__img {
+    display: block;
     width: 100%;
-    max-width: fit-content;
+    height: auto;
 }
 
-/* FOOTER */
+/* ====================
+   ABOUT US
+==================== */
+
+#about-us {
+    padding-bottom: 80px;
+}
+
+.section__title {
+    color: #d55a6d;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.about__card {
+    background: #faf0f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.about__card--large {
+    grid-column: span 2;
+}
+
+.about__card h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.about__card p {
+    line-height: 1.8;
+}
+
+.pool-hours {
+    margin-top: 24px;
+}
+
+/* ====================
+   FOOTER
+==================== */
 
 footer {
-    padding: 32px 0px;
+    border-top: 1px solid #eee;
+    padding: 30px 0;
 }
 
 .footer__row {
-    display: flex;
     justify-content: center;
-    width: 100%;
+    text-align: center;
+}
+
+/* ====================
+   MOBILE
+==================== */
+
+@media (max-width: 768px) {
+
+    .nav__link--list {
+        gap: 20px;
+    }
+
+    .about__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about__card--large {
+        grid-column: span 1;
+    }
+
+    .about__card {
+        padding: 30px;
+    }
 }
