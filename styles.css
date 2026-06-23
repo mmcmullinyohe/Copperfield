@@ -450,6 +450,102 @@ footer {
 }
 
 /* ====================
+   POOL RULES PAGE
+==================== */
+#pool-rules {
+    padding: 80px 0;
+}
+
+.pool__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: start;
+}
+
+.pool__card {
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.pool__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.pool__content {
+    padding: 36px 40px;
+}
+
+.pool__date {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.pool__content h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.pool__content p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+}
+
+.pool__rules-list {
+    padding-left: 24px;
+}
+
+.pool__rules-list li {
+    list-style-type: disc;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.pool__notice {
+    background: #faf0f1;
+    border-left: 4px solid #d55a6d;
+    padding: 20px 24px;
+    margin-top: 28px;
+}
+
+.pool__notice h3 {
+    color: #d55a6d;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.pool__notice p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .pool__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pool__img {
+        height: auto;
+    }
+
+    .pool__content {
+        padding: 28px;
+    }
+}
+
+/* ====================
    MOBILE
 ==================== */
 
